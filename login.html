@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registration Form</title>
+<script>
+function validateform()
+{
+var name=document.myform.name.value;
+var email=document.myform.email.value;
+var password=document.myform.password.value;
+var cpassword=document.myform.cpassword.value;
+if (name==null || name=="")
+{
+alert("Name can't be blank");
+return false;
+
+}
+else if(email==null || email=="")
+{
+alert("Email is required and must be valid");
+return false;
+}
+else if(password.length < 8)
+{
+alert("Password is required and must be atleast 8 characters long.");
+return false;
+}
+else if(cpassword==null || cpassword=="")
+{
+alert("Confirm Your Password");
+return false;
+}
+else if(password != cpassword)
+{
+alert("Password doesn't match");
+return false;
+}
+else
+{
+alert("SUCCESSFULLY REGISTERED!");
+}
+}
+</script>
+</head>
+<body>
+<h2><center><u>REGISTRATION FORM</u></center></h2>
+<form name="myform" method="post" onsubmit="return validateform()">
+<b> Name</b>
+<input type="text" name="name" value="" /> <br><br>
+<b>Email</b>
+<input type="text" name="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+<br><br>
+<b>Password</b>
+<input type="password" name="password" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+/> <br><br>
+<b>Confirm Password</b>
+<input type="password" name="cpassword" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+/> <br><br>
+<input type="submit" value="Sign up"/>
+</form>
+
+</body>
+</html>
