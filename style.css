@@ -1,0 +1,62 @@
+.header {
+    padding: 0 70px;
+    overflow: hidden;
+    display: flex;
+    
+    
+    
+}
+
+nav  li{
+    display: inline-block;
+    margin-right: 10px;
+}
+nav2 {
+    text-align: right;
+    flex:1;
+    
+}
+nav2 li {
+    padding: 0;
+    display: inline-block;
+    margin-right: 20px;
+}
+nav2 li a {
+   text-decoration: none;
+   color:white;
+}
+
+
+nul li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+nul1 {
+    float: right;
+    flex:1;
+}
+nul1 li {
+   display: inline-block;
+   padding:20 0px
+}
+nul1 li a {
+   text-decoration: none;
+   color: white;
+   margin-right: 20px;
+}
+
+tet {
+   font-size:25px;
+   font-family:cursive;
+}
+
+.end {
+   padding:60px;
+}
+body {
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+  background-size: cover;
+}
